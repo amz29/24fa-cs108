@@ -1,7 +1,5 @@
 """
-Put here your custom function to draw something.
-The figure shouldn't surpass a square of 200x200 points.
-The turtle passed should be start AND END pointing left at the right-left corner of the figure.
+
 """
 
 import turtle
@@ -54,12 +52,12 @@ def fractal_fernando(t):
         koch_line(length)
         t.right(360/poly_sides)
     t.end_fill()
-    
+    t.end_fill()
     #import turtle 
 def draw():
     t = turtle.Turtle()
     screen = turtle.Screen()
-    screen.setup(width=200, height=200)
+    screen.setup(width=600, height=600)
     t.forward(100)
     t.right(90)
     t.forward(100)
