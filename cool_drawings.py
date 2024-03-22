@@ -4,6 +4,7 @@ The figure shouldn't surpass a square of 200x200 points.
 The turtle passed should be start AND END pointing left at the right-left corner of the figure.
 """
 
+import turtle
 def bluesquare_fernando(turtle):
     """
     Author: Fernando Santos
@@ -53,3 +54,20 @@ def fractal_fernando(t):
         koch_line(length)
         t.right(360/poly_sides)
     t.end_fill()
+    
+    #import turtle 
+def draw():
+    t = turtle.Turtle()
+    screen = turtle.Screen()
+    screen.setup(width=200, height=200)
+    t.forward(100)
+    t.right(90)
+    t.forward(100)
+    t.right(90)
+    t.forward(100)
+    t.right(90)
+    t.forward(100)
+    
+    screen.exitonclick()
+
+draw()
